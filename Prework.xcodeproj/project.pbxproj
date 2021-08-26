@@ -15,6 +15,7 @@
 		F121574F26D8132A00CD6A80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F121574D26D8132A00CD6A80 /* LaunchScreen.storyboard */; };
 		F121575A26D8132B00CD6A80 /* PreworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F121575926D8132B00CD6A80 /* PreworkTests.swift */; };
 		F121576526D8132B00CD6A80 /* PreworkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F121576426D8132B00CD6A80 /* PreworkUITests.swift */; };
+		F121577D26D8352B00CD6A80 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F121577C26D8352B00CD6A80 /* SettingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		F121576026D8132B00CD6A80 /* PreworkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PreworkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F121576426D8132B00CD6A80 /* PreworkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreworkUITests.swift; sourceTree = "<group>"; };
 		F121576626D8132B00CD6A80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F121577C26D8352B00CD6A80 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				F121574226D8132900CD6A80 /* AppDelegate.swift */,
 				F121574426D8132900CD6A80 /* SceneDelegate.swift */,
 				F121574626D8132900CD6A80 /* ViewController.swift */,
+				F121577C26D8352B00CD6A80 /* SettingViewController.swift */,
 				F121574826D8132900CD6A80 /* Main.storyboard */,
 				F121574B26D8132A00CD6A80 /* Assets.xcassets */,
 				F121574D26D8132A00CD6A80 /* LaunchScreen.storyboard */,
@@ -261,6 +264,7 @@
 				F121574726D8132900CD6A80 /* ViewController.swift in Sources */,
 				F121574326D8132900CD6A80 /* AppDelegate.swift in Sources */,
 				F121574526D8132900CD6A80 /* SceneDelegate.swift in Sources */,
+				F121577D26D8352B00CD6A80 /* SettingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
