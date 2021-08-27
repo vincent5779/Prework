@@ -12,9 +12,14 @@ class SettingsViewController: UIViewController {
     @IBOutlet weak var custTipAmount: UILabel!
     @IBOutlet weak var sliderAmount: UISlider!
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        let defaults = UserDefaults.standard
+        sliderAmount.value = defaults.float(forKey: "cust") * 100
+        custTipAmount.text = String(format: "%.1f%%", sliderAmount.value)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
     

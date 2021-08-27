@@ -14,13 +14,19 @@ class ViewController: UIViewController {
     @IBOutlet weak var tipControl: UISegmentedControl!
     @IBOutlet weak var totalLabel: UILabel!
     
-    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        calculateTip(viewDidLoad())
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         self.title = "Tip Calculator"
     }
-
+    
+    @IBAction func billInput(_ sender: Any) {
+    }
+    
     @IBAction func calculateTip(_ sender: Any) {
         //Access Defaults data
         let defaults = UserDefaults.standard
@@ -31,6 +37,8 @@ class ViewController: UIViewController {
         let tip = bill *
             tipPercentages[tipControl.selectedSegmentIndex]
         let total =  bill + tip
+        defaults.set(tip, forKey: "tip")
+        defaults.set(total, forKey: "total")
         
         //Update Tip Amount Label
         tipAmountLabel.text = String(format: "$%.2f", tip)
