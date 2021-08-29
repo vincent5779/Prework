@@ -24,9 +24,6 @@ class ViewController: UIViewController {
         self.title = "Tip Calculator"
     }
     
-    @IBAction func billInput(_ sender: Any) {
-    }
-    
     @IBAction func calculateTip(_ sender: Any) {
         //Access Defaults data
         let defaults = UserDefaults.standard
